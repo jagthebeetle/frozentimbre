@@ -1,0 +1,22 @@
+# Local files
+.DS_Store
+secret.json
+
+# Raw/training data
+timbre/logs
+playlists.json
+frozen.json
+
+# https://github.com/github/gitignore/blob/master/Global/VirtualEnv.gitignore
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+pip-selfcheck.json
