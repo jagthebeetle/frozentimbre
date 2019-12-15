@@ -12,4 +12,9 @@ These consist of unaligned `segment` and `session` windows over each track, the 
 `regression.py` uses a two-layer ReLU. This is a fairly simple model with just under 5000 parameters and trains in ~7m on a 2019 MBP.
 
 ## Results
+
+### Two-layer NN
 Training stops working well after 50-60 epochs (compared to up to 1000 epochs), with ~21 MAE in key-confidence prediction.
+
+### Weighted linear regression
+Since segments are of differing durations, it seems reasonable to have the loss function incorporate the duration of a segment as a penalty-weighting during training. This adds a weight term to the loss function equal to the duration of the segment. This achieves a comparable MAE of ~22.5.
